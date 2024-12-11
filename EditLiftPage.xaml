@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             Shell.NavBarIsVisible="False"
+             x:Class="D424Weightlifting.EditLiftPage"
+             HideSoftInputOnTapped="True"
+             Title="EditLiftPage">
+
+    <Grid Padding="20" RowSpacing="10" ColumnSpacing="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="EditLiftLabel"
+           Grid.Row="0"
+           Text="Edit Lift"
+           FontSize="Large"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+
+        <DatePicker x:Name="LiftDatePicker"
+                    Grid.Row="1"
+                    Format="yyyy-MM-dd"
+                    MaximumDate="{x:Static sys:DateTime.Today}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="CenterAndExpand"/>
+        
+        <Picker x:Name="LiftPicker"
+                Grid.Row="3"
+                Title="Select a lift"
+                ItemsSource="{Binding Lifts}"
+                ItemDisplayBinding="{Binding LiftSummary}"
+                SelectedIndexChanged="LiftPicker_SelectedIndexChanged"
+                VerticalOptions="Center"
+                HorizontalOptions="Fill"/>
+        
+        <Label x:Name="CurrentLiftLabel"
+               Grid.Row="4"
+               Text="Lift Name: "
+               FontSize="Medium"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Button x:Name="LoadLiftButton"
+                Text="Load Lift"
+                Grid.Row="2"
+                Clicked="LoadLiftButton_Clicked"
+                Margin="10"
+                HorizontalOptions="Fill"/>
+
+        <CollectionView x:Name="LiftsSetsCollection"
+                    Grid.Row="5"
+                       ItemsSource="{Binding Sets}"
+                        SelectionMode="Single"
+                        SelectionChanged="LiftsSetsCollection_SelectionChanged"
+                       VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnSpacing="10" Padding="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="{Binding SetNumber, StringFormat='Set {0}'}" Grid.Column="0" VerticalOptions="Center"/>
+
+                        <Entry Placeholder="Reps"
+                           Text="{Binding Reps, Mode=TwoWay}"
+                           Keyboard="Numeric"
+                           Grid.Column="1"/>
+
+                        <Entry Placeholder="Weight in lbs"
+                           Text="{Binding Weight, Mode=TwoWay}"
+                           Keyboard="Numeric"
+                           Grid.Column="2"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Label x:Name="TotalVolumeLabel"
+           Grid.Row="6"
+           Text="Total Volume: "
+           FontSize="Medium"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"/>
+
+        <Button x:Name="AddASet"
+            Grid.Row="7"
+            Text="Add A Set"
+            Clicked="AddASet_Clicked"
+            Margin="10"
+            HorizontalOptions="Fill"/>
+
+        <Button x:Name="SaveLift"
+            Grid.Row="8"
+            Text="Save Lift"
+            Clicked="SaveEditLift_Clicked"
+            Margin="10"
+            HorizontalOptions="Fill"/>
+
+
+        <Button x:Name="BackButton"
+            Grid.Row="9"
+            Text="Return"
+            Padding="20"
+            Clicked="BackButton_Clicked"
+            Margin="10"
+            HorizontalOptions="Fill"/>
+
+    </Grid>
+</ContentPage>

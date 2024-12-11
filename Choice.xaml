@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             x:Class="D424Weightlifting.Choice"
+             Title="Choice">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to The 5 Lifts"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="Large"
+            Padding="20"/>
+
+        <Label 
+            Text="Please select an option below"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Padding="20"
+            FontSize="Large"/>
+
+        <Button x:Name="BTNWorkouts"
+                Text="Workouts"
+                Clicked="BTNWorkouts_Clicked"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                Padding="20"
+                Margin="10"/>
+        
+        <Button x:Name="BTNMacros"
+                Text="Macros"
+                Clicked="BTNMacros_Clicked"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                Padding="20"
+                Margin="10"/>
+
+        <Button x:Name="BtnTracking"
+                Text="Weight and Macro Tracking"
+                Clicked="BtnTracking_Clicked"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Padding="20"
+                Margin="10"/>
+        <Button x:Name="LogOut"
+                Text="Log Out"
+                Clicked="LogOut_Clicked"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Padding="10"
+                Margin="10"/>
+
+
+        <Picker x:Name="WorkoutPicker"
+                Title="Choose your Lift"
+                IsVisible="False"
+                SelectedIndexChanged="WorkoutPicker_SelectedIndexChanged"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

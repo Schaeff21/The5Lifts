@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="D424Weightlifting.Workout"
+             Shell.NavBarIsVisible="False"
+             HideSoftInputOnTapped="True"
+             Title="Workout">
+
+    <Grid Padding="20" RowSpacing="10" ColumnSpacing="10">
+       
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        
+    
+        <Label x:Name="WorkoutNameLabel"
+               Grid.Row="0"
+               Text="Workout Name"
+               FontSize="Large"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+
+        <CollectionView x:Name="SetsCollection"
+                        Grid.Row="1"
+                           ItemsSource="{Binding Sets}"
+                           VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnSpacing="10" Padding="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="{Binding SetNumber, StringFormat='Set {0}'}" Grid.Column="0" VerticalOptions="Center"/>
+
+                        <Entry Placeholder="Reps"
+                               Text="{Binding Reps, Mode=TwoWay}"
+                               Keyboard="Numeric"
+                               Grid.Column="1"/>
+                        
+                        <Entry Placeholder="Weight in lbs"
+                               Text="{Binding Weight, Mode=TwoWay}"
+                               Keyboard="Numeric"
+                               Grid.Column="2"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Label x:Name="TotalVolumeLabel"
+               Grid.Row="2"
+               Text="Total Volume: "
+               FontSize="Medium"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Button x:Name="AddASet"
+                Grid.Row="3"
+                Text="Add A Set"
+                Clicked="AddASet_Clicked"
+                Margin="10"
+                HorizontalOptions="Fill"/>
+        
+        <Button x:Name="SaveWorkout"
+                Grid.Row="4"
+                Text="Save Lift"
+                Clicked="SaveWorkout_Clicked"
+                Margin="10"
+                HorizontalOptions="Fill"/>
+
+
+        <Button x:Name="BackButton"
+                Grid.Row="5"
+                Text="Return"
+                Padding="20"
+                Clicked="BackButton_Clicked"
+                Margin="10"
+                HorizontalOptions="Fill"/>
+    </Grid>
+</ContentPage>

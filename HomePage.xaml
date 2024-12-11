@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             HideSoftInputOnTapped="True"
+             x:Class="D424Weightlifting.HomePage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="thefiveliftslogo.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="The Five Lifts logo" />
+
+            <Label
+                Text="Hello, Welcome to The 5 Lifts!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Please log in."
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <!--ENSURE TO REMOVE THE TEXT IN LOG IN AND PASSWORD - FOR TEST PURPOSE ONLY-->
+            <Entry x:Name="LogIn"
+                   Text="Test"
+                   Placeholder="Enter Log In"
+                   />
+            
+            <Entry x:Name="LogInPassword"
+                   Text="test" 
+                   Placeholder="Password"
+                   IsPassword="True"
+                   />
+
+            <Button
+                x:Name="LogInBtn"
+                Text="Log In" 
+                Clicked="LogInBtn_Clicked"
+                HorizontalOptions="Fill" />
+            
+            <Button x:Name="NewUser"
+                    Text="New User"
+                    Clicked="NewUser_Clicked"/>
+
+            
+            <!--FOR TESTING PURPOSES - COMMENT OUT!!!-->
+            <Button x:Name="ViewUsers"
+                    Text="View Users"
+                    Clicked="ViewUsers_Clicked"/>
+            <Button x:Name="ClearDatabase"
+                    Text="Clear Database"
+                    Clicked="ClearDatabase_Clicked"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

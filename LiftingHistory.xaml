@@ -1,0 +1,48 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="D424Weightlifting.LiftingHistory"
+             Shell.NavBarIsVisible="False"
+             Title="Lifting History">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <!-- Date Picker and Search Button -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <DatePicker x:Name="DatePicker" HorizontalOptions="StartAndExpand" />
+                <Button Text="Search" Clicked="SearchButton_Clicked" HorizontalOptions="EndAndExpand" />
+            </StackLayout>
+
+            <!-- Lifting History Grid in a Scrollable View -->
+            <ScrollView Orientation="Both">
+                <Grid x:Name="LiftingHistoryGrid"
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="FillAndExpand"
+                      Padding="10"
+                      ColumnSpacing="5"
+                      RowSpacing="5">
+                    <!-- The grid's rows and columns are dynamically added in the code-behind -->
+                </Grid>
+            </ScrollView>
+
+            <!-- Action Buttons -->
+            <Grid HorizontalOptions="FillAndExpand" ColumnSpacing="10" RowSpacing="10">
+                <!-- Define Rows and Columns -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Top Row -->
+                <Button Text="Edit Lift" Clicked="EditLift_Clicked" Grid.Row="0" Grid.Column="0" />
+                <Button Text="Edit Macros" Clicked="EditMacros_Clicked" Grid.Row="0" Grid.Column="1" />
+
+                <!-- Bottom Row -->
+                <Button Text="Delete" Clicked="Delete_Clicked" Grid.Row="1" Grid.Column="0" />
+                <Button Text="Return" Clicked="ReturnButton_Clicked" Grid.Row="1" Grid.Column="1" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="D424Weightlifting.RegisterNewUser"
+             Shell.NavBarIsVisible="False"
+             Title="RegisterNewUser">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to The 5 Lifts"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="UserNameEntry"
+               Placeholder="Username"/>
+        <Entry x:Name="PasswordEntry"
+               Placeholder="Password"
+               IsPassword="True"/>
+        <Entry x:Name="EmailEntry"
+               Placeholder="Email"/>
+        <Entry x:Name="HeightEntry"
+               Placeholder="Height in Inches"
+               Keyboard="Numeric"/>
+        <Entry x:Name="WeightEntry"
+               Placeholder="Weight in lbs"
+               Keyboard="Numeric"/>
+
+        <Button x:Name="BTNRegisterUser" 
+            Text="Register"
+                Clicked="BTNRegisterUser_Clicked"/>
+        
+        <Button x:Name="Return"
+                Text="Return to Log In"
+                Clicked="Return_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

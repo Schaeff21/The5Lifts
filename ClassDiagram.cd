@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
+  <Class Name="D424Weightlifting.Choice">
+    <Position X="12.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAACAAEAAAAAAAAAAAAAAAAAAAAAQABAA=</HashCode>
+      <FileName>Choice.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D424Weightlifting.DataPersist">
+    <Position X="14.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAACABAAAAAQAIAQACAAAQAAAAgAAAAA=</HashCode>
+      <FileName>DataPersist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D424Weightlifting.EditLiftPage">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAIEQAACAAAAAgAAQAgACAAAAQAAAA=</HashCode>
+      <FileName>EditLiftPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D424Weightlifting.EditMacros">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAEAQAQAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>EditMacros.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D424Weightlifting.HomePage">
+    <Position X="14.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CACAAAAAIAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HomePage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D424Weightlifting.LiftingHistory">
+    <Position X="19.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAgAAAAAAAAIAABAAIAQBAAAgBAIAIAAACA=</HashCode>
+      <FileName>LiftingHistory.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D424Weightlifting.Macros">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAECAgAgAAAAwAAAAAQAgAAAAABEAAAACAAAAA=</HashCode>
+      <FileName>Macros.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D424Weightlifting.RegisterNewUser">
+    <Position X="21.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RegisterNewUser.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D424Weightlifting.Workout">
+    <Position X="17" Y="2" Width="1.5" />
+    <NestedTypes>
+      <Class Name="D424Weightlifting.Workout.WorkoutSet" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Workout.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BAAAAggEAAgACAAIAAAACAAAAAAAAAAAAAAAgAAEAAA=</HashCode>
+      <FileName>Workout.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D424.TrackingUser" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D424.UserSession">
+    <Position X="21.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAIAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D424.User">
+    <Position X="17" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABCAEAAgAAAAAAAgAACAAAAACAQAAgIAAAAA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D424.DailyLifts">
+    <Position X="9.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAEAAAABAAAAAAggEAgAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="D424.LiftSet" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAIAAAAABAAAAEADAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="D424.DailyCardio">
+    <Position X="5.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAE=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="D424.Macros">
+    <Position X="7.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAAAAAEAAAABAAAAAABgCAAAAAIAAAAAEAAAAAAA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="D424.Database">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACCiBABAQKAAAAYhAIAAAABAAQgCAAABQSAAkA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.Maui.Controls.ContentPage" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="D424.ITrackable">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

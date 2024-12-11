@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             Shell.NavBarIsVisible="False"
+             x:Class="D424Weightlifting.EditMacros"
+              HideSoftInputOnTapped="True"
+             Title="EditMacros">
+    <Grid Padding="20" RowSpacing="10" ColumnSpacing="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="EditMacrosLabel"
+               Grid.Row="0"
+               Text="Edit Macros"
+               FontSize="Large"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+
+        <DatePicker x:Name="MacrosDatePicker"
+                    Grid.Row="1"
+                    Format="yyyy-MM-dd"
+                    MaximumDate="{x:Static sys:DateTime.Today}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="CenterAndExpand"/>
+
+        <Button x:Name="LoadMacros"
+                Text="Load Macros"
+                Grid.Row="2"
+                Clicked="LoadMacros_Clicked"
+                Margin="10"
+                HorizontalOptions="Fill"/>
+
+        <StackLayout Grid.Row="3" Padding="10" Spacing="10">
+            <Entry x:Name="ProteinEntry"
+                   Placeholder="Protein (g)"
+                   Keyboard="Numeric"/>
+            <Entry x:Name="CarbsEntry"
+                   Placeholder="Carbs (g)"
+                   Keyboard="Numeric"/>
+            <Entry x:Name="FatsEntry"
+                   Placeholder="Fats (g)"
+                   Keyboard="Numeric"/>
+            <Entry x:Name="CaloriesEntry"
+                   Placeholder="Calories"
+                   Keyboard="Numeric"/>
+        </StackLayout>
+
+        <Button x:Name="SaveMacros"
+                Grid.Row="4"
+                Text="Save Macros"
+                Clicked="SaveMacros_Clicked"
+                Margin="10"
+                HorizontalOptions="Fill"/>
+
+        <Button x:Name="BackButton"
+                Grid.Row="5"
+                Text="Return"
+                Clicked="BackButton_Clicked"
+                Margin="10"
+                HorizontalOptions="Fill"/>
+
+    </Grid>
+</ContentPage>

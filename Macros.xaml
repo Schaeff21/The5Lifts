@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="D424Weightlifting.Macros"
+             Shell.NavBarIsVisible="False"
+             HideSoftInputOnTapped="True"
+             Title="Macros">
+    <Grid Padding="20" RowSpacing="10" ColumnSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label 
+            Text="Enter your Macros"
+            Grid.Row="0"
+            Grid.ColumnSpan="2"
+            FontSize="Large" 
+            HorizontalOptions="Center"/>
+        
+        <Label Text="Protein (g)"
+               Grid.Row="1"
+               Grid.Column="0"
+               VerticalOptions="Center"/>
+        <Entry x:Name="ProteinEntry"
+               Placeholder="Enter Protein (g)"
+               Grid.Row="1" Grid.Column="1"
+               Keyboard="Numeric"/>
+
+        <Label Text="Carbs (g)"
+               Grid.Row="2"
+               Grid.Column="0"
+               VerticalOptions="Center"/>
+            
+        <Entry x:Name="CarbsEntry"
+               Placeholder="Enter Carbs (g)"
+               Grid.Row="2" Grid.Column="1"
+               Keyboard="Numeric"/>
+
+        <Label Text="Fats (g)"
+               Grid.Row="3"
+               Grid.Column="0"
+               VerticalOptions="Center"/>
+
+        <Entry x:Name="FatsEntry"
+               Placeholder="Enter Fats (g)"
+               Grid.Row="3" Grid.Column="1"
+               Keyboard="Numeric"/>
+        
+        <Button x:Name="AddMacros"
+                Text="Add Macros"
+                Grid.Row="4" Grid.ColumnSpan="2"
+                Clicked="AddMacros_Clicked"
+                Margin="10"
+                HorizontalOptions="Fill"/>
+
+        <Label Text="Daily Totals:" 
+               Grid.Row="5" Grid.ColumnSpan="2"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+        
+        <Label x:Name="TotalProteinLabel"
+               Text="Protein: g"
+               Grid.Row="6" Grid.ColumnSpan="2"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+        
+        <Label x:Name="TotalCarbsLabel"
+               Text="Carbs: g"
+               Grid.Row="7" Grid.ColumnSpan="2"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+        
+        <Label x:Name="TotalFatsLabel"
+               Text="Fats: g"
+               Grid.Row="8" Grid.ColumnSpan="2"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+        
+        <Label x:Name="TotalCaloriesLabel"
+               Text="Calories: "
+               Grid.Row="9" Grid.ColumnSpan="2"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Button x:Name="SaveMacros"
+                Text="Save"
+                Padding="10"
+                Clicked="SaveMacros_Clicked"
+                Grid.Row="10" Grid.ColumnSpan="2"
+                Margin="10"
+                HorizontalOptions="Fill"/>
+
+        <Button x:Name="BackButton"
+                Text="Return"
+                Padding="10"
+                Clicked="BackButton_Clicked"
+                Grid.Row="11" Grid.ColumnSpan="2"
+                Margin="10"
+                HorizontalOptions="Fill"/>
+    </Grid>
+</ContentPage>
