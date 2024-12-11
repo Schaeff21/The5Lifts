@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\D424Weightlifting",
+    "\\D424Weightlifting\\bin\\Debug",
+    "\\D424Weightlifting\\bin\\Debug\\net8.0-android",
+    "\\D424Weightlifting\\bin\\Debug\\net8.0-ios",
+    "\\D424Weightlifting\\bin\\Debug\\net8.0-ios\\ios-arm64",
+    "\\D424Weightlifting\\bin\\Debug\\net8.0-ios\\ios-arm64\\ar"
   ],
-  "SelectedNode": "\\C:\\Users\\logan\\Source\\Repos\\The5Lifts",
+  "SelectedNode": "\\D424Weightlifting\\D424Weightlifting.csproj",
   "PreviewInSolutionExplorer": false
 }
