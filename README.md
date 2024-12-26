@@ -32,4 +32,24 @@ Login and Signup
 12.	When back on the tracking page, you can see that the changes are reflected. As you can see below the Squat lift has gone up and the Macros have been modified and the calories to reflect the macro changes.
    
 13.	If you need to delete the data for a date, select the date in the upper left corner for the date you wish to delete. As you can see the information on the left, if you select Yes, it will delete the data for that date. You will see a warning that no history is available so there is nothing that can be displayed.
-   
+
+
+Privacy Policy for D424Weightlifting
+Introduction
+At D424Weightlifting, we value your privacy. This Privacy Policy explains that our app does not collect, store, or share any personal data or sensitive information from its users.
+
+By using the D424Weightlifting app, you agree to this Privacy Policy.
+
+Information We Do Not Collect
+We do not collect any personal information, such as your name, email address, or phone number.
+We do not collect any data related to your usage of the app, including workout data, fitness goals, or dietary information.
+We do not use cookies, tracking technologies, or analytics tools to monitor your activity.
+Third-Party Services
+The D424Weightlifting app does not integrate with or share data with any third-party services or providers.
+
+Data Security
+Since we do not collect any data, there is no data to secure. Your use of the app is entirely local to your device.
+
+Changes to This Privacy Policy
+We may update this Privacy Policy from time to time. Any changes will be communicated within the app or through the App Store listing. Continued use of the app constitutes acceptance of the revised Privacy Policy.
+
