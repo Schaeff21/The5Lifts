@@ -1,29 +1,35 @@
-<strong>**DO NOT DISTRIBUTE OR PUBLICLY POST SOLUTIONS TO THESE LABS. MAKE ALL FORKS OF THIS REPOSITORY WITH SOLUTION CODE PRIVATE. PLEASE REFER TO THE STUDENT CODE OF CONDUCT AND ETHICAL EXPECTATIONS FOR COLLEGE OF INFORMATION TECHNOLOGY STUDENTS FOR SPECIFICS. **</strong>
+User Guide
+Introduction
+The Steps below demonstrate how to create an account and input data so you can track your workouts and dietary macros. They are step by step instructions from creating a new account to how to input workout or macro information, along with how to edit data that may have been entered incorrectly, by mistake of course.
 
-# WESTERN GOVERNORS UNIVERSITY 
-## D424 – SOFTWARE ENGINEERING CAPSTONE
-Welcome to Software Engineering Capstone! This is an opportunity for students to develop full stack software engineering documentation and applications. They will execute documentation, unit testing, revision of software applications, and deploy software applications with scripts and containers on a cloud platform.
+Login and Signup 
+1.	If you have an account enter your username and password and then click the "Log in" button below the username and password entry.
+ 
 
-FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFER TO THE COURSE PAGE.
-BASIC INSTRUCTIONS
-For this assessment, you will deploy your developed full stack software product to a web service of your choice.
+2.	If you need to create an account, select “New User” button and choose a unique username and password, then enter the information about the user, height and weight.
+3.	 
+1.	Once logged in, select whether you want to add a workout or Macro entry. Once entries have been made, there will be data to display when selecting the Weight and Macro tracking. 
+ 
+2.	If you select the Workouts button, a drop down menu will display to allow you to select one of the lifts you wish to add an entry to:
+ 
+3.	Select the lift you wish to enter a workout for.
+4.	Enter the Reps and Weight in pounds for set 1 and if you have more sets to add, select Add A Set button, once you are done entering all your sets, select Save Lift.
+ 
+5.	Select the Return button to head to the previous page where you selected the workout button. If you have macros you need to enter, please select the Macros button.
+6.	Enter the Proten, Carbs, and Fats, you wish to count and select the Add Macros button. If your entries are correct, please select the Save button and Return button to head back to the options page.
+ 
+7.	Select the Weight and Macro Tracking Button to view the entries you have made. This page will display the workouts you have tracked and the macros you have entered. 
+ 
+8.	Once you have enough history that all data is not displayed on the page, you can select the date in the upper left corner and use the search button to view the data from the selected date.
+ 
+9.	If you wish to edit the lift data for a date, select the Edit Lift button. First, select the date at the top of the screen then select load lift. A pop up will display the lifts you can edit for the date you have selected. Click on the lift you wish to edit.
+ 
+10.	The selected lift will load the sets you had previously entered. You can add more sets via the Add Set button or change the numbers of the already entered sets. Once complete select the Save Lift button and then Return to go back to the tracking page.
+ 
+11.	If you wish to edit your Macros, select the Edit Macros button. Same as the edit lift option, first select the date you wish to edit your macros of then select the Load Macros button. Once your macros are loaded, change them as needed. Once changed, select the Save Macros option and then the Return button.
+ 
 
-
-## SUPPLEMENTAL RESOURCES  
-1.	How to clone a project to IntelliJ using Git?
-
-> Ensure that you have Git installed on your system and that IntelliJ is installed using [Toolbox](https://www.jetbrains.com/toolbox-app/). Make sure that you are using version 2022.3.2. Once this has been confirmed, click the clone button and use the 'IntelliJ IDEA (HTTPS)' button. This will open IntelliJ with a prompt to clone the proejct. Save it in a safe location for the directory and press clone. IntelliJ will prompt you for your credentials. Enter in your WGU Credentials and the project will be cloned onto your local machine.  
-
-2. How to create a branch and start Development?
-
-- GitLab method
-> Press the '+' button located near your branch name. In the dropdown list, press the 'New branch' button. This will allow you to create a name for your branch. Once the branch has been named, you can select 'Create Branch' to push the branch to your repository.
-
-- IntelliJ method
-> In IntelliJ, Go to the 'Git' button on the top toolbar. Select the new branch option and create a name for the branch. Make sure checkout branch is selected and press create. You can now add a commit message and push the new branch to the local repo.
-
-## SUPPORT
-If you need additional support, please navigate to the course page and reach out to your course instructor.
-
-## FUTURE USE
-Take this opportunity to create or add to a simple resume portfolio to highlight and showcase your work for future use in career search, experience, and education!
+12.	When back on the tracking page, you can see that the changes are reflected. As you can see below the Squat lift has gone up and the Macros have been modified and the calories to reflect the macro changes.
+   
+13.	If you need to delete the data for a date, select the date in the upper left corner for the date you wish to delete. As you can see the information on the left, if you select Yes, it will delete the data for that date. You will see a warning that no history is available so there is nothing that can be displayed.
+   
